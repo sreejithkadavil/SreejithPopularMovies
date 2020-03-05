@@ -1,0 +1,68 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:dist="http://schemas.android.com/apk/distribution"
+4    package="android.example.popularmoviespart1"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="22"
+9-->C:\Sreejith\UDacityAndroid\SreejithPopularMovies\app\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="29" />
+10-->C:\Sreejith\UDacityAndroid\SreejithPopularMovies\app\src\main\AndroidManifest.xml
+11
+12    <dist:module dist:instant="true" />
+12-->C:\Sreejith\UDacityAndroid\SreejithPopularMovies\app\src\main\AndroidManifest.xml:6:5-40
+12-->C:\Sreejith\UDacityAndroid\SreejithPopularMovies\app\src\main\AndroidManifest.xml:6:18-37
+13
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Sreejith\UDacityAndroid\SreejithPopularMovies\app\src\main\AndroidManifest.xml:8:5-83
+14-->C:\Sreejith\UDacityAndroid\SreejithPopularMovies\app\src\main\AndroidManifest.xml:8:22-64
+15
+16    <application
+16-->C:\Sreejith\UDacityAndroid\SreejithPopularMovies\app\src\main\AndroidManifest.xml:10:5-25:19
+17        android:allowBackup="true"
+17-->C:\Sreejith\UDacityAndroid\SreejithPopularMovies\app\src\main\AndroidManifest.xml:11:9-35
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.1.0] C:\Users\skadavil\.gradle\caches\transforms-2\files-2.1\1cd7eff88f5e86d0249af2958bf465f0\core-1.1.0\AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:icon="@mipmap/ic_launcher"
+20-->C:\Sreejith\UDacityAndroid\SreejithPopularMovies\app\src\main\AndroidManifest.xml:12:9-43
+21        android:label="@string/app_name"
+21-->C:\Sreejith\UDacityAndroid\SreejithPopularMovies\app\src\main\AndroidManifest.xml:13:9-41
+22        android:roundIcon="@mipmap/ic_launcher_round"
+22-->C:\Sreejith\UDacityAndroid\SreejithPopularMovies\app\src\main\AndroidManifest.xml:14:9-54
+23        android:supportsRtl="true"
+23-->C:\Sreejith\UDacityAndroid\SreejithPopularMovies\app\src\main\AndroidManifest.xml:15:9-35
+24        android:testOnly="true"
+25        android:theme="@style/AppTheme" >
+25-->C:\Sreejith\UDacityAndroid\SreejithPopularMovies\app\src\main\AndroidManifest.xml:16:9-40
+26        <activity android:name="android.example.popularmoviespart1.DetailActivity" />
+26-->C:\Sreejith\UDacityAndroid\SreejithPopularMovies\app\src\main\AndroidManifest.xml:17:9-61
+26-->C:\Sreejith\UDacityAndroid\SreejithPopularMovies\app\src\main\AndroidManifest.xml:17:19-49
+27        <activity android:name="android.example.popularmoviespart1.MainActivity" >
+27-->C:\Sreejith\UDacityAndroid\SreejithPopularMovies\app\src\main\AndroidManifest.xml:18:9-24:20
+27-->C:\Sreejith\UDacityAndroid\SreejithPopularMovies\app\src\main\AndroidManifest.xml:18:19-47
+28            <intent-filter>
+28-->C:\Sreejith\UDacityAndroid\SreejithPopularMovies\app\src\main\AndroidManifest.xml:19:13-23:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->C:\Sreejith\UDacityAndroid\SreejithPopularMovies\app\src\main\AndroidManifest.xml:20:17-69
+29-->C:\Sreejith\UDacityAndroid\SreejithPopularMovies\app\src\main\AndroidManifest.xml:20:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->C:\Sreejith\UDacityAndroid\SreejithPopularMovies\app\src\main\AndroidManifest.xml:22:17-77
+31-->C:\Sreejith\UDacityAndroid\SreejithPopularMovies\app\src\main\AndroidManifest.xml:22:27-74
+32            </intent-filter>
+33        </activity>
+34
+35        <provider
+35-->[com.squareup.picasso:picasso:2.71828] C:\Users\skadavil\.gradle\caches\transforms-2\files-2.1\fcea09cb2494a81a992255099bb368af\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+36            android:name="com.squareup.picasso.PicassoProvider"
+36-->[com.squareup.picasso:picasso:2.71828] C:\Users\skadavil\.gradle\caches\transforms-2\files-2.1\fcea09cb2494a81a992255099bb368af\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+37            android:authorities="android.example.popularmoviespart1.com.squareup.picasso"
+37-->[com.squareup.picasso:picasso:2.71828] C:\Users\skadavil\.gradle\caches\transforms-2\files-2.1\fcea09cb2494a81a992255099bb368af\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+38            android:exported="false" />
+38-->[com.squareup.picasso:picasso:2.71828] C:\Users\skadavil\.gradle\caches\transforms-2\files-2.1\fcea09cb2494a81a992255099bb368af\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+39    </application>
+40
+41</manifest>
