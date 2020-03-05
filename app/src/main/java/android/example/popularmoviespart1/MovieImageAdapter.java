@@ -42,10 +42,9 @@ public class MovieImageAdapter extends RecyclerView.Adapter<MovieImageAdapter.Mo
     public void onBindViewHolder(MovieAdapterViewHolder movieAdapterViewHolder, int position) {
         Movie movieItem = m_movieList.get(position);
         ImageView imageView = movieAdapterViewHolder.getMovieListImageItem();
-        Log.v("Movieimage adapter",String.valueOf(position));
         Picasso.get().setLoggingEnabled(true);
         Picasso.get().load(movieItem.getPosterListImageUri()).into(imageView);
-        Log.v("Movieimage adapter",movieItem.getPosterListImageUri().toString());
+
 
     }
 

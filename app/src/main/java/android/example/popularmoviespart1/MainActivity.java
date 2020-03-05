@@ -55,10 +55,9 @@ public class MainActivity extends AppCompatActivity implements MovieImageAdapter
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.d("Log-mainactivity", "passed setcontenview");
 
         m_RV_movieListView = (RecyclerView) findViewById(R.id.rv_movies);
-        Log.d("Log-mainactivity", "passed findViewById");
+
 
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 3, 1, false);
         m_RV_movieListView.setLayoutManager(gridLayoutManager);
@@ -113,7 +112,7 @@ public class MainActivity extends AppCompatActivity implements MovieImageAdapter
         String movieAsJson = gson.toJson(movie);
         intentToStartDetailActivity.putExtra(Intent.EXTRA_TEXT, movieAsJson);
         startActivity(intentToStartDetailActivity);
-        Toast.makeText(this, "Viewing " + movie.getTitle(), Toast.LENGTH_SHORT).show();
+
     }
 
     private class MovieFetcherTask extends AsyncTask<String, Void, List<Movie>> {
@@ -153,7 +152,7 @@ public class MainActivity extends AppCompatActivity implements MovieImageAdapter
         }
         @Override
         protected void onPostExecute(List<Movie> movies) {
-         //   m_PD_loadingIndicator.dismiss();
+            m_PD_loadingIndicator.dismiss();
             if(!movies.isEmpty()) {
                 m_movieAdapter.setMovieData(movies);
             }
