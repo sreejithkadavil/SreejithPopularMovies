@@ -4,6 +4,7 @@ import android.net.Uri;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 
 public class Movie {
@@ -60,7 +61,7 @@ public class Movie {
     }
 
     public String getReleaseDateForDisplay() {
-        return new SimpleDateFormat("dd MMM yyyy").format(m_releaseDate).toString();
+        return new SimpleDateFormat("dd MMM yyyy", Locale.getDefault()).format(m_releaseDate).toString();
     }
 
     public Uri getPosterListImageUri() {

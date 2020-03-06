@@ -1,7 +1,6 @@
 package android.example.popularmoviespart1;
 
 import android.net.Uri;
-import android.util.Log;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -16,7 +15,7 @@ public class NetworkUtils {
 
         private final static String API_KEY_PARAM = "api_key";
         private final static String MOVIE_DB_BASE_URL = "https://api.themoviedb.org/3/movie";
-        private final static String API_KEY = "";
+        private final static String API_KEY = "5480260e96f3999b66a42759f10f0e9d";
 
         static public URL buildUrl(String query) {
             Uri builtUri = Uri.parse(MOVIE_DB_BASE_URL).buildUpon()

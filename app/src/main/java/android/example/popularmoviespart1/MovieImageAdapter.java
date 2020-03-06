@@ -1,7 +1,6 @@
 package android.example.popularmoviespart1;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

@@ -12,6 +12,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 public class MovieJsonUtils {
 
@@ -30,16 +31,16 @@ public class MovieJsonUtils {
 
             JSONObject movieResponseJson = new JSONObject(movieResponseString);
             JSONArray moviesArray = movieResponseJson.getJSONArray(MDB_RESULTS);
-            DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+            DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
 
             for (int i = 0; i < moviesArray.length(); i++) {
                 JSONObject movieObject = moviesArray.getJSONObject(i);
-                String tite = movieObject.getString(MDB_TITLE);
+                String title = movieObject.getString(MDB_TITLE);
                 String overview = movieObject.getString(MDB_OVERVIEW);
                 String posterPath = movieObject.getString(MDB_POSTER_PATH);
                 float voterAvg = (float) movieObject.getDouble(MDB_VOTE_AVERAGE);
                 Date releaseDate = dateFormat.parse(movieObject.getString(MDB_RELEASE_DATE));
-                movies.add(new Movie(tite, overview, posterPath, voterAvg, releaseDate));
+                movies.add(new Movie(title, overview, posterPath, voterAvg, releaseDate));
             }
 
             return movies;
